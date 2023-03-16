@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CUAHANGStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="tb_CHITIETHOADON">
+      <EntityTypeMapping TypeName="CUAHANG.tb_CHITIETHOADON">
+        <MappingFragment StoreEntitySet="tb_CHITIETHOADON">
+          <ScalarProperty Name="MAHD" ColumnName="MAHD" />
+          <ScalarProperty Name="IDCHITIETXE" ColumnName="IDCHITIETXE" />
+          <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
+          <ScalarProperty Name="TONGTIEN" ColumnName="TONGTIEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_CHITIETMAUXE">
+      <EntityTypeMapping TypeName="CUAHANG.tb_CHITIETMAUXE">
+        <MappingFragment StoreEntitySet="tb_CHITIETMAUXE">
+          <ScalarProperty Name="MAXE" ColumnName="MAXE" />
+          <ScalarProperty Name="IDMAU" ColumnName="IDMAU" />
+          <ScalarProperty Name="IDCHITIETXE" ColumnName="IDCHITIETXE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_HOADON">
+      <EntityTypeMapping TypeName="CUAHANG.tb_HOADON">
+        <MappingFragment StoreEntitySet="tb_HOADON">
+          <ScalarProperty Name="MAHD" ColumnName="MAHD" />
+          <ScalarProperty Name="NGAYLAP" ColumnName="NGAYLAP" />
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_KHACHHANG">
+      <EntityTypeMapping TypeName="CUAHANG.tb_KHACHHANG">
+        <MappingFragment StoreEntitySet="tb_KHACHHANG">
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="DISABLE" ColumnName="DISABLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_LOAIXE">
+      <EntityTypeMapping TypeName="CUAHANG.tb_LOAIXE">
+        <MappingFragment StoreEntitySet="tb_LOAIXE">
+          <ScalarProperty Name="MALOAI" ColumnName="MALOAI" />
+          <ScalarProperty Name="TENLOAIXE" ColumnName="TENLOAIXE" />
+          <ScalarProperty Name="DISABLE" ColumnName="DISABLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_MAUSAC">
+      <EntityTypeMapping TypeName="CUAHANG.tb_MAUSAC">
+        <MappingFragment StoreEntitySet="tb_MAUSAC">
+          <ScalarProperty Name="IDMAU" ColumnName="IDMAU" />
+          <ScalarProperty Name="TENMAU" ColumnName="TENMAU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_NHACUNGCAP">
+      <EntityTypeMapping TypeName="CUAHANG.tb_NHACUNGCAP">
+        <MappingFragment StoreEntitySet="tb_NHACUNGCAP">
+          <ScalarProperty Name="MANCC" ColumnName="MANCC" />
+          <ScalarProperty Name="TENNCC" ColumnName="TENNCC" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="DISABLE" ColumnName="DISABLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_NHANVIEN">
+      <EntityTypeMapping TypeName="CUAHANG.tb_NHANVIEN">
+        <MappingFragment StoreEntitySet="tb_NHANVIEN">
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+          <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+          <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
+          <ScalarProperty Name="NGAYSINH" ColumnName="NGAYSINH" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="CMND" ColumnName="CMND" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="CHUCVU" ColumnName="CHUCVU" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="DISABLE" ColumnName="DISABLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_XEMAY">
+      <EntityTypeMapping TypeName="CUAHANG.tb_XEMAY">
+        <MappingFragment StoreEntitySet="tb_XEMAY">
+          <ScalarProperty Name="MAXE" ColumnName="MAXE" />
+          <ScalarProperty Name="TENXE" ColumnName="TENXE" />
+          <ScalarProperty Name="MALOAI" ColumnName="MALOAI" />
+          <ScalarProperty Name="MANCC" ColumnName="MANCC" />
+          <ScalarProperty Name="DUNGTICH" ColumnName="DUNGTICH" />
+          <ScalarProperty Name="TINHTRANG" ColumnName="TINHTRANG" />
+          <ScalarProperty Name="GIABAN" ColumnName="GIABAN" />
+          <ScalarProperty Name="DISABLE" ColumnName="DISABLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionName="CUAHANG.Store.CHARTXE" FunctionImportName="CHARTXE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CUAHANG.CHARTXE_Result">
+          <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
+          <ScalarProperty Name="TENXE" ColumnName="TENXE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MAUXETHEOMAXE" FunctionName="CUAHANG.Store.MAUXETHEOMAXE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CUAHANG.MAUXETHEOMAXE_Result">
+          <ScalarProperty Name="IDMAU" ColumnName="IDMAU" />
+          <ScalarProperty Name="TENMAU" ColumnName="TENMAU" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
